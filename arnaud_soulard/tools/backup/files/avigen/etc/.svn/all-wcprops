@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/avigen/etc
+END
+fstab
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/avigen/etc/fstab
+END
+hosts
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/avigen/etc/hosts
+END
+profile
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/avigen/etc/profile
+END
+make.conf
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/avigen/etc/make.conf
+END
+porticron.conf
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/avigen/etc/porticron.conf
+END
+synergy.conf
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/avigen/etc/synergy.conf
+END
+ntp.conf
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/avigen/etc/ntp.conf
+END
+sysctl.conf
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/avigen/etc/sysctl.conf
+END
+nsswitch.conf
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/avigen/etc/nsswitch.conf
+END
+rc.conf
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/avigen/etc/rc.conf
+END
+slim.conf
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/avigen/etc/slim.conf
+END

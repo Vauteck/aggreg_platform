@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/framework/targetConfigurationFiles/with_kencast_aggregation
+END
+contact.conf
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/framework/targetConfigurationFiles/with_kencast_aggregation/contact.conf
+END
+fazzt.conf
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/framework/targetConfigurationFiles/with_kencast_aggregation/fazzt.conf
+END
+appli.conf
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/framework/targetConfigurationFiles/with_kencast_aggregation/appli.conf
+END
+ibis.conf
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/framework/targetConfigurationFiles/with_kencast_aggregation/ibis.conf
+END

@@ -1,0 +1,225 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# AVIWEST LAN
+auto eth0
+iface eth0 inet dhcp
+
+# for aggregation-platform LAN (development + validation platform)
+# ifb interface for controlling incoming traffic
+auto eth1
+iface eth1 inet static
+	up ip link set dev ifb0 up
+	down ip link set ifb0 down
+	address 172.16.0.1
+	#gateway 172.16.0.1
+	netmask 255.255.255.0
+	network 172.16.0.0
+	broadcast 172.16.0.255
+
+auto eth1:100
+iface eth1:100 inet static
+	address 172.16.100.1
+	#gateway 172.16.100.1
+	netmask 255.255.255.0
+	network 172.16.100.0
+	broadcast 172.16.100.255
+
+auto eth1:200
+iface eth1:200 inet static
+	address 172.16.200.1
+	#gateway 172.16.200.1
+	netmask 255.255.255.0
+	network 172.16.200.0
+	broadcast 172.16.200.255
+
+# for dmng web interface
+auto eth1:201
+iface eth1:201 inet static
+	address 192.168.10.1
+	#gateway 192.168.10.1
+	netmask 255.255.255.0
+	network 192.168.10.0
+	broadcast 192.168.10.255
+
+#auto eth1
+#iface eth1 inet static
+#	address 172.16.0.1
+#	gateway 172.16.0.10
+#	netmask 255.255.255.0
+#	network 172.16.0.0
+#	broadcast 172.16.0.255
+
+# development aggregation-platform specific (network aliases instead of real usb-ethernet adapters)
+auto eth1:110
+iface eth1:110 inet static
+	address 172.16.110.1
+	#gateway 172.16.110.1
+	netmask 255.255.255.0
+	network 172.16.110.0
+	broadcast 172.16.110.255
+
+auto eth1:111
+iface eth1:111 inet static
+	address 172.16.111.1
+	#gateway 172.16.111.1
+	netmask 255.255.255.0
+	network 172.16.111.0
+	broadcast 172.16.111.255
+
+auto eth1:120
+iface eth1:120 inet static
+	address 172.16.120.1
+	#gateway 172.16.120.1
+	netmask 255.255.255.0
+	network 172.16.120.0
+	broadcast 172.16.120.255
+
+auto eth1:121
+iface eth1:121 inet static
+	address 172.16.121.1
+	#gateway 172.16.121.1
+	netmask 255.255.255.0
+	network 172.16.121.0
+	broadcast 172.16.121.255
+
+auto eth1:122
+iface eth1:122 inet static
+	address 172.16.122.1
+	#gateway 172.16.122.1
+	netmask 255.255.255.0
+	network 172.16.122.0
+	broadcast 172.16.122.255
+
+#auto eth1:123
+#iface eth1:123 inet static
+#	address 172.16.123.1
+#	#gateway 172.16.123.1
+#	netmask 255.255.255.0
+#	network 172.16.123.0
+#	broadcast 172.16.123.255
+
+#auto eth1:124
+#iface eth1:124 inet static
+#	address 172.16.124.1
+#	#gateway 172.16.124.1
+#	netmask 255.255.255.0
+#	network 172.16.124.0
+#	broadcast 172.16.124.255
+
+#auto eth1:125
+#iface eth1:125 inet static
+#	address 172.16.125.1
+#	#gateway 172.16.125.1
+#	netmask 255.255.255.0
+#	network 172.16.125.0
+#	broadcast 172.16.125.255
+
+#auto eth1:126
+#iface eth1:126 inet static
+#	address 172.16.126.1
+#	#gateway 172.16.126.1
+#	netmask 255.255.255.0
+#	network 172.16.126.0
+#	broadcast 172.16.126.255
+
+#auto eth1:127
+#iface eth1:127 inet static
+#	address 172.16.127.1
+#	#gateway 172.16.127.1
+#	netmask 255.255.255.0
+#	network 172.16.127.0
+#	broadcast 172.16.127.255
+
+#auto eth1:12
+#iface eth1:12 inet static
+#	address 172.16.110.1
+#	gateway 172.16.110.10
+#	netmask 255.255.255.0
+#	network 172.16.110.0
+#	broadcast 172.16.110.255
+
+# validation aggregation-platform specific (real usb-ethernet adapters instead of network aliases)
+auto eth110
+iface eth110 inet static
+	address 172.16.110.1
+	#gateway 172.16.110.1
+	netmask 255.255.255.0
+	network 172.16.110.0
+	broadcast 172.16.110.255
+
+auto eth111
+iface eth111 inet static
+	address 172.16.111.1
+	#gateway 172.16.111.1
+	netmask 255.255.255.0
+	network 172.16.111.0
+	broadcast 172.16.111.255
+
+auto eth120
+iface eth120 inet static
+	address 172.16.120.1
+	#gateway 172.16.120.1
+	netmask 255.255.255.0
+	network 172.16.120.0
+	broadcast 172.16.120.255
+
+auto eth121
+iface eth121 inet static
+	address 172.16.121.1
+	#gateway 172.16.121.1
+	netmask 255.255.255.0
+	network 172.16.121.0
+	broadcast 172.16.121.255
+
+auto eth122
+iface eth122 inet static
+	address 172.16.122.1
+	#gateway 172.16.122.1
+	netmask 255.255.255.0
+	network 172.16.122.0
+	broadcast 172.16.122.255
+
+#auto eth123
+#iface eth123 inet static
+#	address 172.16.123.1
+#	#gateway 172.16.123.1
+#	netmask 255.255.255.0
+#	network 172.16.123.0
+#	broadcast 172.16.123.255
+
+#auto eth124
+#iface eth124 inet static
+#	address 172.16.124.1
+#	#gateway 172.16.124.1
+#	netmask 255.255.255.0
+#	network 172.16.124.0
+#	broadcast 172.16.124.255
+
+#auto eth125
+#iface eth125 inet static
+#	address 172.16.125.1
+#	#gateway 172.16.125.1
+#	netmask 255.255.255.0
+#	network 172.16.125.0
+#	broadcast 172.16.125.255
+
+#auto eth126
+#iface eth126 inet static
+#	address 172.16.126.1
+#	#gateway 172.16.126.1
+#	netmask 255.255.255.0
+#	network 172.16.126.0
+#	broadcast 172.16.126.255
+
+#auto eth127
+#iface eth127 inet static
+#	address 172.16.127.1
+#	#gateway 172.16.127.1
+#	netmask 255.255.255.0
+#	network 172.16.127.0
+#	broadcast 172.16.127.255

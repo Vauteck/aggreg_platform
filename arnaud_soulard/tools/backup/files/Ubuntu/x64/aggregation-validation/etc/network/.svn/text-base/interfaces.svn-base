@@ -1,0 +1,61 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+
+auto eth110
+iface eth110 inet static
+        # ifb interface for controlling incoming traffic
+        up ip link set dev ifb110 up
+        down ip link set ifb110 down
+	address 172.16.110.1
+	#gateway 172.16.110.1
+	netmask 255.255.255.0
+	network 172.16.110.0
+	broadcast 172.16.110.255
+
+auto eth111
+iface eth111 inet static
+        # ifb interface for controlling incoming traffic
+        up ip link set dev ifb111 up
+        down ip link set ifb111 down
+	address 172.16.111.1
+	#gateway 172.16.111.1
+	netmask 255.255.255.0
+	network 172.16.111.0
+	broadcast 172.16.111.255
+
+auto eth120
+iface eth120 inet static
+        # ifb interface for controlling incoming traffic
+        up ip link set dev ifb120 up
+        down ip link set ifb120 down
+	address 172.16.120.1
+	#gateway 172.16.120.1
+	netmask 255.255.255.0
+	network 172.16.120.0
+	broadcast 172.16.120.255
+
+auto eth121
+iface eth121 inet static
+        # ifb interface for controlling incoming traffic
+        up ip link set dev ifb121 up
+        down ip link set ifb121 down
+	address 172.16.121.1
+	#gateway 172.16.121.1
+	netmask 255.255.255.0
+	network 172.16.121.0
+	broadcast 172.16.121.255
+
+auto eth122
+iface eth122 inet static
+        # ifb interface for controlling incoming traffic
+        up ip link set dev ifb122 up
+        down ip link set ifb122 down
+	address 172.16.122.1
+	#gateway 172.16.122.1
+	netmask 255.255.255.0
+	network 172.16.122.0
+	broadcast 172.16.122.255

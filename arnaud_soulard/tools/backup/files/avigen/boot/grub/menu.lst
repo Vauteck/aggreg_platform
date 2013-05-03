@@ -1,0 +1,20 @@
+#default saved
+default 0
+timeout 10
+splashimage=/boot/grub/splash.xpm.gz
+
+title=Gentoo Linux (3.4.0-gentoo)
+root (hd0,0)
+kernel /boot/kernel-genkernel-x86_64-3.4.0-gentoo console=tty1 dolvm init=/linuxrc keymap=fr i915.modeset=1 quiet real_root=/dev/sda3 root=/dev/ram0 rootfstype=btrfs splash=verbose,theme:natural_gentoo
+initrd /boot/initramfs-genkernel-x86_64-3.4.0-gentoo
+
+title=Gentoo Linux (3.3.5-gentoo)
+root (hd0,0)
+kernel /boot/kernel-genkernel-x86_64-3.3.5-gentoo console=tty1 dolvm init=/linuxrc keymap=fr i915.modeset=1 quiet real_root=/dev/sda3 root=/dev/ram0 rootfstype=btrfs splash=verbose,theme:natural_gentoo
+initrd /boot/initramfs-genkernel-x86_64-3.3.5-gentoo
+
+title=Gentoo Linux (3.3.4-gentoo)
+root (hd0,0)
+kernel /boot/kernel-genkernel-x86_64-3.3.4-gentoo console=tty1 dolvm init=/linuxrc keymap=fr i915.modeset=1 quiet real_root=/dev/sda3 root=/dev/ram0 rootfstype=btrfs splash=verbose,theme:natural_gentoo
+initrd /boot/initramfs-genkernel-x86_64-3.3.4-gentoo
+

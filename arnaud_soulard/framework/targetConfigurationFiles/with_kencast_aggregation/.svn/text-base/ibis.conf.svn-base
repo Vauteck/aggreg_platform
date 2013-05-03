@@ -1,0 +1,6 @@
+<attribute name="contact" value="studio">
+<attribute name="fazzt" value="fazzt">
+<attribute name="videoRate" value="10000">
+<attribute name="audioRate" value="128">
+<attribute name="path" value="/media/mmcblk1p1/test.mp4">
+<attribute name="rtpPort" value="1234">

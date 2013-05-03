@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc
+END
+issue
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/issue
+END
+mime.types
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/mime.types
+END
+hosts.deny
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/hosts.deny
+END
+fstab
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/fstab
+END
+profile
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/profile
+END
+hosts
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/hosts
+END
+sysctl.conf
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/sysctl.conf
+END
+modules
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/modules
+END
+hosts.allow
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/hosts.allow
+END
+bash.bashrc
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/bash.bashrc
+END
+hostname
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/hostname
+END
+services
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/services
+END
+synergy.conf
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/synergy.conf
+END
+ntp.conf
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/ntp.conf
+END
+fuse.conf
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/fuse.conf
+END
+nsswitch.conf
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/nsswitch.conf
+END

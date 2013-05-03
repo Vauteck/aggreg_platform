@@ -1,0 +1,116 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# AVIWEST LAN
+auto eth0
+iface eth0 inet dhcp
+
+# aggregation-platform LAN
+auto eth1
+iface eth1 inet static
+address 172.16.30.1
+#gateway 172.16.30.10
+netmask 255.255.255.0
+network 172.16.30.0
+broadcast 172.16.30.255
+
+auto eth1:1
+iface eth1:1 inet static
+address 172.16.31.1
+#gateway 172.16.31.10
+netmask 255.255.255.0
+network 172.16.31.0
+broadcast 172.16.31.255
+
+auto eth1:2
+iface eth1:2 inet static
+address 172.16.11.1
+#gateway 172.16.11.10
+netmask 255.255.255.0
+network 172.16.11.0
+broadcast 172.16.11.255
+
+auto eth1:3
+iface eth1:3 inet static
+address 172.16.12.1
+#gateway 172.16.12.10
+netmask 255.255.255.0
+network 172.16.12.0
+broadcast 172.16.12.255
+
+auto eth1:4
+iface eth1:4 inet static
+address 172.16.13.1
+#gateway 172.16.13.10
+netmask 255.255.255.0
+network 172.16.13.0
+broadcast 172.16.13.255
+
+auto eth1:5
+iface eth1:5 inet static
+address 172.16.14.1
+#gateway 172.16.14.10
+netmask 255.255.255.0
+network 172.16.14.0
+broadcast 172.16.14.255
+
+auto eth1:6
+iface eth1:6 inet static
+address 172.16.15.1
+#gateway 172.16.15.10
+netmask 255.255.255.0
+network 172.16.15.0
+broadcast 172.16.15.255
+
+auto eth1:7
+iface eth1:7 inet static
+address 172.16.16.1
+#gateway 172.16.16.10
+netmask 255.255.255.0
+network 172.16.16.0
+broadcast 172.16.16.255
+
+auto eth1:8
+iface eth1:8 inet static
+address 172.16.17.1
+#gateway 172.16.17.10
+netmask 255.255.255.0
+network 172.16.17.0
+broadcast 172.16.17.255
+
+auto eth1:9
+iface eth1:9 inet static
+address 172.16.18.1
+#gateway 172.16.18.10
+netmask 255.255.255.0
+network 172.16.18.0
+broadcast 172.16.18.255
+
+auto eth1:10
+iface eth1:10 inet static
+address 172.16.19.1
+#gateway 172.16.19.10
+netmask 255.255.255.0
+network 172.16.19.0
+broadcast 172.16.19.255
+
+auto eth1:11
+iface eth1:11 inet static
+address 172.16.20.1
+#gateway 172.16.20.10
+netmask 255.255.255.0
+network 172.16.20.0
+broadcast 172.16.20.255
+
+auto eth1:12
+iface eth1:12 inet static
+address 172.16.50.1
+#gateway 172.16.50.10
+netmask 255.255.255.0
+network 172.16.50.0
+broadcast 172.16.50.255
+

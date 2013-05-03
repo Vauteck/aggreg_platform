@@ -1,0 +1,62 @@
+#!/bin/bash
+
+############################################## Variables list ############################################################
+
+# List of the network interfaces connected to the dmng pro
+DMNG_ITF="eth1 eth2"
+
+# IP address of the dmng pro interface that will handle ssh trafic coming from the LAN
+DMNG_CONTROL_IP="172.16.0.100"
+
+# Name of the network interface connected to the studio
+#STUDIO_ITF="eth3"
+
+
+# IP address of the studio interface (for ssh traffic on port 5323)
+#STUDIO_CONTROL_IP="192.168.0.10"
+
+# Name of the network interface connected to aviwest LAN
+LAN_ITF="eth0"
+
+#########################################################################################################################
+
+# Do not edit anything below this point
+
+LAN_ITF_IP=`/sbin/ifconfig | grep $LAN_ITF -A1 | grep inet | awk -F: '{print $2}' | awk '{print $1}'`
+
+#echo $LAN_ITF_IP
+
+sudo /sbin/iptables -A INPUT -j ACCEPT
+sudo /sbin/iptables -A FORWARD -j ACCEPT
+sudo /sbin/iptables -A OUTPUT -j ACCEPT
+
+#sudo /sbin/iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+
+# Allow all established connections and new traffic
+#for i in $INT_ITF
+#do
+	#	sudo /sbin/iptables -A FORWARD -i $LAN_ITF -o $i -m state --state RELATED,ESTABLISHED -j ACCEPT	
+	#sudo /sbin/iptables -A FORWARD -i $i -o $LAN_ITF -j ACCEPT
+	#sudo /sbin/iptables -A FORWARD -i $i -o $STUDIO_ITF -j ACCEPT
+	#sudo /sbin/iptables -A FORWARD -i $STUDIO_ITF -o $i -j ACCEPT
+	#sudo /sbin/iptables -A INPUT -i $i -j ACCEPT
+#done
+
+#sudo /sbin/iptables -A INPUT -i $STUDIO_ITF -j ACCEPT
+#sudo /sbin/iptables -A FORWARD -i $LAN_ITF -o $STUDIO_ITF -m state --state RELATED,ESTABLISHED -j ACCEPT
+#sudo /sbin/iptables -A FORWARD -i $STUDIO_ITF -o $LAN_ITF -j ACCEPT
+
+# Masquerade trafic from dmng interfaces and studio interface to LAN
+sudo /sbin/iptables -t nat -A POSTROUTING -o $LAN_ITF -j MASQUERADE
+
+# Redirect tcp traffic on port 5322 to the dmng control ip (ssh)
+sudo /sbin/iptables -t nat -A PREROUTING -i $LAN_ITF -d $LAN_ITF_IP -p tcp --dport 5322 -j DNAT --to $DMNG_CONTROL_IP
+
+# Redirect tcp traffic on port 8888 to the dmng control ip (web access)
+sudo /sbin/iptables -t nat -A PREROUTING -i $LAN_ITF -d $LAN_ITF_IP -p tcp --dport 8888 -j DNAT --to $DMNG_CONTROL_IP
+
+# Redirect tcp traffic on port 5001 to the dmng control ip (iperf)
+# sudo /sbin/iptables -t nat -A PREROUTING -i $LAN_ITF -d $LAN_ITF_IP -p tcp --dport 5001 -j DNAT --to $DMNG_CONTROL_IP
+
+# Redirect tcp traffic on port 5323 to the studio interface
+#sudo /sbin/iptables -t nat -A PREROUTING -i $LAN_ITF -d $LAN_ITF_IP -p tcp --dport 5323 -j DNAT --to $STUDIO_CONTROL_IP

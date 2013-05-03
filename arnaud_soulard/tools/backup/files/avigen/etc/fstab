@@ -1,0 +1,80 @@
+# /etc/fstab: static file system information.
+#
+# noatime turns off atimes for increased performance (atimes normally aren't 
+# needed); notail increases performance of ReiserFS (at the expense of storage 
+# efficiency).  It's safe to drop the noatime options if you want and to 
+# switch between notail / tail freely.
+#
+# The root filesystem should have a pass number of either 0 or 1.
+# All other filesystems should have a pass number of 0 or greater than 1.
+#
+# See the manpage fstab(5) for more information.
+#
+
+# <file system>						<mount point>			<type>		<options>							<dump/pass>
+# linux mount points
+UUID=45235ff9-3e83-46f8-90f9-965bec834519		/boot				ext2		auto,noatime							1 2
+UUID=b4bc7643-1ce4-4c0a-b4e2-a06fa1b833b8		none				swap		sw								0 0
+UUID=5c34a382-d8ec-4838-b5c7-576b9de3a384		/				btrfs		defaults							0 1
+UUID=db21768a-dde9-4169-b202-ba6f0bfd2c99		/home				btrfs		defaults							0 2
+UUID=0348bf8e-bd7b-48d3-b202-dd31f49f0eb5		/opt				btrfs		defaults							0 2
+UUID=525dbed9-9085-4687-b988-e9cfbb816d30		/tmp				btrfs		defaults							0 2
+UUID=abe88ce4-86b7-4a73-884b-b868fb1d0390		/usr				btrfs		defaults							0 2
+UUID=ab4b9053-17ec-4a48-bf4f-06e636a1d746		/var				btrfs		defaults							0 2
+
+# shared memory on tmpfs
+#shm							/dev/shm			tmpfs		defaults,size=2048M						0 0
+
+# portage on tmpfs
+tmpfs							/var/tmp/portage		tmpfs		defaults							0 0
+
+# windows mount points
+#UUID=7EC218FAC218B7FB					/mnt/winSys			ntfs-3g		default								0 0
+#UUID=FE42F3C842F383A5					/mnt/winData			ntfs-3g		default								0 0
+
+# cd/dvd player mount point
+/dev/sr0						/mnt/dvd			udf,iso9660	user,noauto,ro							0 0
+
+# usb key mount points
+#UUID=F7FB-3366						/mnt/usbKey1			auto		noauto,rw,user							0 0
+#UUID=D8BA-0E02						/mnt/usbKey2			auto		noauto,rw,user							0 0
+#UUID=8098-7409						/mnt/usbKey3			auto		noauto,rw,user							0 0
+#UUID=9E10-AA34 						/mnt/nikonD5000			vfat		noauto,rw,user,iocharset=utf8						0 0
+
+# usb hard drive mount points
+#UUID=AC54-1BAA						/mnt/usbHd			auto		noauto,rw,user							0 0
+#UUID=5D1E635C6E75DB62					/mnt/usbHd			auto		noauto,rw,user							0 0
+#UUID=5D1E635C6E75DB62					/mnt/usbHd			ntfs-3g		noauto,rw,user							0 0
+
+# NFSv3 mount points
+192.168.1.4:/home/share					/home/share			nfs		ro,udp,v3,soft,bg,intr						0 0
+#192.168.1.4:/home/share					/home/share			nfs		auto,nfsvers=3,rsize=8192,rw,user,wsize=8192			0 0
+#wankan:/mnt/extData1/common				/mnt/nfs/wankan/common		nfs		auto,nfsvers=3,rsize=8192,rw,user,wsize=8192			0 0
+#wankan:/mnt/extData1/mirrors				/mnt/nfs/wankan/mirrors		nfs		auto,nfsvers=3,rsize=8192,rw,user,wsize=8192			0 0
+#wankan:/mnt/extData1/softwares				/mnt/nfs/wankan/softwares	nfs		auto,nfsvers=3,rsize=8192,rw,user,wsize=8192			0 0
+#wankan:/mnt/extData1/uploads				/mnt/nfs/wankan/uploads		nfs		auto,nfsvers=3,rsize=8192,rw,user,wsize=8192			0 0
+
+# NFSv4 mount points
+#wankan:/common						/mnt/nfs/wankan/common		nfs4		auto,wsize=32768,rsize=32768 					0 0
+#wankan:/mirrors						/mnt/nfs/wankan/mirrors		nfs4		auto,wsize=32768,rsize=32768 					0 0
+#wankan:/softwares					/mnt/nfs/wankan/softwares	nfs4		auto,wsize=32768,rsize=32768 					0 0
+#wankan:/uploads						/mnt/nfs/wankan/uploads		nfs4		auto,wsize=32768,rsize=32768 					0 0
+
+# CIFS mount points
+//192.168.1.5/05-R&D					/mnt/cifs/partage/rd		cifs		auto,username=asoulard,password=A14q25w36,ip=192.168.1.5,uid=arnaud,gid=arnaud,rw	0 0
+//192.168.1.5/06-livraisons				/mnt/cifs/partage/livraisons	cifs		auto,username=asoulard,password=A14q25w36,ip=192.168.1.5,uid=arnaud,gid=arnaud,rw	0 0
+//192.168.1.5/07-support				/mnt/cifs/partage/support	cifs		auto,username=asoulard,password=A14q25w36,ip=192.168.1.5,uid=arnaud,gid=arnaud,rw	0 0
+#//192.168.1.5/08-tools					/mnt/cifs/partage/tools		cifs		auto,username=dev,password=aviwest,ip=192.168.1.5,uid=arnaud,gid=arnaud,rw	0 0
+//192.168.1.5/08-tools					/mnt/cifs/partage/tools		cifs		auto,username=asoulard,password=A14q25w36,ip=192.168.1.5,uid=arnaud,gid=arnaud,rw	0 0
+#//freebox/Disque\040dur					/mnt/cifs/freebox		cifs		guest,iocharset=utf8,file_mode=0777,dir_mode=0777	0 0
+#//freebox/Disque\040dur					/mnt/cifs/freebox		cifs		user=freebox,password=password,uid=1000,gid=1000,rw	0 0
+
+# ftp mount points
+#curlftpfs#freebox@hd1.freebox.fr			/mnt/ftp/freebox		fuse		allow_other							0 1
+#curlftpfs#anonymous@hd1.freebox.fr			/mnt/ftp/freebox		fuse		allow_other							0 1
+#curlftpfs#anonymous@mafreebox.freebox.fr/Disque\040dur	/mnt/ftp/freebox		fuse		allow_other							0 1
+
+# NFSv4 : bind mount points
+#/home/arnaud						/nfsv4Exports/arnaud		none		bind								0 0
+#/mnt/winData						/nfsv4Exports/winData		none		bind								0 0
+

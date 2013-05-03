@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/default
+END
+rcS
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/default/rcS
+END
+isc-dhcp-server
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/default/isc-dhcp-server
+END
+grub
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/default/grub
+END
+ntpdate
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/default/ntpdate
+END
+ntp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/Ubuntu/x86/aggregation-development/etc/default/ntp
+END

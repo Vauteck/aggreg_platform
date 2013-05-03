@@ -1,0 +1,221 @@
+{
+	"configFormatVersion": "0",
+	"configDateVersion": null,
+    "uiMainMenu": {
+			"0" : {
+					"name"      : "LIVE",
+					"Activation": true
+			},
+			"1" : {
+					"name"      : "STORE",
+					"Activation": true
+			},
+			"2" : {
+					"name"      : "FORWARD",
+					"Activation": true
+			}
+	},
+    "device": {
+			"Product": "DMNG-PRO",
+			"Identifier": "DMNG",
+			"Language": "english"
+	},
+    "datetime": {
+			"Region": null,
+			"City": null,
+			"Networktime": false,
+			"24h": true
+	},
+    "audio": {
+			"Input": "SDI",
+			"BitrateMode": "CBR"
+	},
+	"video": {
+			"Input": "SDI",
+			"Type": "INTERLACED",
+			"Frequency": "FR_50_HZ"
+	},
+    "streamerMode": "NORMAL",
+	"autoRecord": false,
+    "lastRecordedFile": null,
+	"ctrlLink": {
+			"Enable": false,
+			"Mode": "NORMAL",
+			"Port": 4040
+	},
+    "channelProfile": {
+			"1": {"rtpPort": 1234},
+			"2": {"rtpPort": 1240},
+			"3": {"rtpPort": 1250},
+			"4": {"rtpPort": 1260}
+    },
+    "rtpPacketSize": 968,
+	"intercom": {
+			"Mode": "NORMAL",
+			"Port": 8050,
+			"ProfileID": "0",
+			"Profile": {
+					"0": {
+							"name": "STANDARD",
+							"sampleRate": 48000,
+							"bitrate": 16,
+							"channelMode": "STEREO"
+					}
+			}
+	},
+	"atpGeneralBasePort": 7900,
+	"liveProfileID": "0",
+    "liveProfile": {
+			"0" : {
+					"name": "MANUAL",
+					"delay": 3000,
+					"videoBitrateMode": "VBR",
+					"videoBitrate": 2000,
+					"videoCappedBitrate": 10000,
+					"videoResolution": "SD",
+					"videoFrameRate": "FULL",
+					"audioChannelMode": "STEREO",
+					"audioBitrate": 64,
+					"audioMode": "AUTOMATIC",
+					"output": "RTP"
+			},
+			"1" : {
+					"name": "INTERVIEW",
+					"delay": 3000,
+					"videoBitrateMode": "VBR",
+					"videoBitrate": 2000,
+					"videoCappedBitrate": 10000,
+					"videoResolution": "AUTO",
+					"videoFrameRate": "FULL",
+					"audioChannelMode": "STEREO",
+					"audioBitrate": 64,
+					"audioMode": "AUTOMATIC",
+					"output": "RTP"
+			},
+			"2": {
+					"name": "QUALITY",
+					"delay": 20000,
+					"videoBitrateMode": "VBR",
+					"videoBitrate": 2000,
+					"videoCappedBitrate": 10000,
+					"videoResolution": "AUTO",
+					"videoFrameRate": "FULL",
+					"audioChannelMode": "STEREO",
+					"audioBitrate": 64,
+					"audioMode": "AUTOMATIC",
+					"output": "RTP"
+			}
+    },
+    "tsSettings": {
+			"audioPID": 100,
+			"videoPID": 101, 
+			"pmtPID":   102,
+			"pcrPID":   103,
+			"pcrRate":  40,
+			"systemBitrate": 0,
+			"multicastIpEnable": false,
+			"multicastIpAddress": "239.0.1.10",
+			"multicastIpPort": 12345,
+			"multicastIpRemoveNullPacket": false,
+			"multicastTimeToLeave": 64,
+			"multicastNbTsPacketPerIpPacket": 7
+    },
+    "storeProfileID": "0",
+    "storeProfile": {
+			"0" : {
+					"name": "HD",
+					"videoBitrate": 5000,
+					"videoResolution": "HD",
+					"audioBitrate": 64,
+					"audioChannelMode": "STEREO",
+					"Mode": "NORMAL",
+					"FileSizeMax": 10000,
+					"FileTimeMax": 3600,
+					"NbMaxFile": 3
+			},
+			"1": {
+					"name": "SD-HIGH",
+					"videoBitrate": 3500,
+					"videoResolution": "SD",
+					"audioBitrate": 64,
+					"audioChannelMode": "STEREO",
+					"Mode": "NORMAL",
+					"FileSizeMax": 10000,
+					"FileTimeMax": 3600,
+					"NbMaxFile": 3
+			},
+			"2": {
+					"name": "SD-LOW",
+					"videoBitrate": 2000,
+					"videoResolution": "SD",
+					"audioBitrate": 64,
+					"audioChannelMode": "STEREO",
+					"Mode": "NORMAL",
+					"FileSizeMax": 10000,
+					"FileTimeMax": 3600,
+					"NbMaxFile": 3
+			}
+    },
+    "networkInterface": {
+			"0": {
+					"name": "ETH1",
+					"type": "ETHERNET",
+					"mode": "DHCP",
+					"ipVersion": "v4",
+					"ipAddress": "192.168.1.15",
+					"netmask": "255.255.255.0",
+					"gateway": "192.168.1.1",
+					"mtu": 1500
+			},
+			"1": {
+					"name": "ETH2",
+					"type": "ETHERNET",
+					"mode": "GATEWAY",
+					"ipVersion": "v4",
+					"ipAddress": "192.168.10.10",
+					"netmask": "255.255.255.0",
+					"gateway": "192.168.10.1",
+					"mtu": 1500
+			},
+			"2": {
+					"name": "EXP",
+					"type": "ETHERNET",
+					"mode": "GATEWAY",
+					"ipVersion": "v4",
+					"ipAddress": "192.168.20.10",
+					"netmask": "255.255.255.0",
+					"gateway": "192.168.20.1",
+					"mtu": 1500
+			},
+			"3": {
+					"name": "WIFI",
+					"type": "WIFI",
+					"mode": "DHCP",
+					"ipVersion": "v4",
+					"ipAddress": "192.168.30.10",
+					"netmask": "255.255.255.0",
+					"gateway": "192.168.30.1",
+					"essid": null,
+					"channel": 11,
+					"securityMode": "WPA",
+					"password": "Password",
+					"ip_range_start": "192.168.30.20",
+					"ip_range_end": "192.168.30.25",
+					"mtu": 1500
+			}
+    },
+    "studioProfileID": "0",
+	"studioProfile": {
+			"0": {
+					"name": "STUDIO",
+					"channelProfileID": "1",
+					"ipAddress": "192.168.1.25",
+					"username": "aviwest",
+					"password": "safestreams"
+			}
+	},
+    "operatorProfile": {
+    },
+    "wifiProfile": {
+    }
+}

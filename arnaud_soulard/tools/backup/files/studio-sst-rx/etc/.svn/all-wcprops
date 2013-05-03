@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/studio-sst-rx/etc
+END
+bash.bashrc
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/studio-sst-rx/etc/bash.bashrc
+END
+fstab
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/studio-sst-rx/etc/fstab
+END
+hosts
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/studio-sst-rx/etc/hosts
+END
+profile
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/studio-sst-rx/etc/profile
+END
+ntp.conf
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/studio-sst-rx/etc/ntp.conf
+END
+sysctl.conf
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/studio-sst-rx/etc/sysctl.conf
+END
+nsswitch.conf
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/ip-bonding/!svn/ver/865/aggregation-platform/trunk/arnaud_soulard/tools/backup/files/studio-sst-rx/etc/nsswitch.conf
+END

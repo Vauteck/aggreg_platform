@@ -1,0 +1,15 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface (for netm)
+auto eth0
+iface eth0 inet dhcp
+
+# The secondary network interface (for ssh access)
+auto eth1
+iface eth1 inet dhcp
+#up route add -host 192.168.1.201 gw 192.168.1.2
