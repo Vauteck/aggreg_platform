@@ -1,4 +1,4 @@
 <?php
-	$cmd = $_POST["cmd"];
+	$cmd = escapeshellarg($_POST["cmd"]);
 	echo json_encode(shell_exec($cmd));
 ?>
